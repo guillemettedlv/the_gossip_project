@@ -1,0 +1,7 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Profil de <%=@user.first_name%> <%=@user.last_name%></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%=@user.email%> | <%=@user.age%> ans | from <%=City.find(@user.city_id).name%></h6>
+    <p class="card-text"><%=@user.description%></p>
+  </div>
+</div>
